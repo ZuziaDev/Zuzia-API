@@ -1,0 +1,9 @@
+{
+"apiname":"API name",
+"token": "bottoken",
+"key":"admin api key"
+"aylinktoken":"aylinkkey",
+"ipinfo":"ipinfokey",
+"webhook":"discord webhook url",
+"image":"webhook avatar"
+}
