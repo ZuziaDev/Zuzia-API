@@ -29,10 +29,9 @@ const client = new Client({
 /*                                                                      MODÜLLER                                                                                   */
 /*                                                                      TANIMLAR                                                                                   */
 const ayarlar = require('./ayarlar.json')
-const sor = require("./main/sor.json")
-const zuzi = require("./main/sor2.json")
+const deneme = require("./main/8ball.json")
 const hook = new Webhook(ayarlar.webhook);
-hook.setUsername(ayarlar.apiname + ' - API');
+hook.setUsername(ayarlar.apiname);
 hook.setAvatar(ayarlar.image);
 /*                                                                      TANIMLAR                                                                                   */
 /*                                                                     EXPRESS API                                                                                 */
@@ -72,16 +71,30 @@ app.get('/api/currency/sterlin',async (req, res)=>{
 /*                                                                        DOVİZ                                                                                    */
 /*                                                                        GAMES                                                                                    */
 app.get('/api/fun/8ball:lang?',async (req, res)=>{
-    let lang = req.query.lang
+let lang = req.query.lang
     if(!lang){
         res.json({"error": "Please write a language."})
-    } else if(lang === "tr"||lang === "turkce"||lang === "türkçe"){
-    let ball = sor[Math.floor(Math.random() * sor.length)]
-    res.json({"response": ball})
-    } else if(lang === "eng"||lang === "english"){
-    let ball = zuzi[Math.floor(Math.random() * zuzi.length)]
-    res.json({"response": ball})
-    } 
+    } else if(lang === "tr"){
+    let test = deneme.tr
+    let tr = test[Math.floor(Math.random() * test.length)]
+    res.json({"response": tr})
+    } else if(lang === "en"){
+    let test = deneme.en
+    let en = test[Math.floor(Math.random() * test.length)]
+    res.json({"response": en})
+    } else if(lang === "de"){
+    let test = deneme.de
+    let de = test[Math.floor(Math.random() * test.length)]
+    res.json({"response": de})
+    } else if(lang === "fr"){
+    let test = deneme.fr
+    let fr = test[Math.floor(Math.random() * test.length)]
+    res.json({"response": fr})
+    } else if(lang === "es"){
+    let test = deneme.es
+    let es = test[Math.floor(Math.random() * test.length)]
+    res.json({"response": es})
+    }
     })
 
 app.get('/api/fun/reverse:text?',async (req, res)=>{
