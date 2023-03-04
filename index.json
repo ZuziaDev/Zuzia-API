@@ -17,7 +17,7 @@
 		   ],
     
 	"fun":[
-		"GET /api/fun/8ball?lang=[tr/turkce/türkçe/eng/english]",
+		"GET /api/fun/8ball?lang=[tr/en/de/fr/se]",
 		"GET /api/fun/reverse?text=[text]",
 		"GET /api/fun/short-url?url=[url]"
 	  ],
