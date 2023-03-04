@@ -52,7 +52,7 @@ image = webhook için resim koyunuz.<br>
            ],
     
     "fun":[
-        "GET /api/fun/8ball?lang=[tr/turkce/türkçe/eng/english]",
+        "GET /api/fun/8ball?lang=[tr/en/de/fr/es]",
         "GET /api/fun/reverse?text=[text]",
         "GET /api/fun/short-url?url=[url]"
       ],
