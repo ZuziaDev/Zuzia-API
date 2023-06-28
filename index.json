@@ -7,7 +7,6 @@
  			   },
     
 	"endpoint":[
-    
 	"currency":[
 		"GET /api/currency/all",
 		"GET /api/currency/dolar",
