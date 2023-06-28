@@ -15,6 +15,7 @@ const animals = require('animals-api');
 const imdb = require("name-to-imdb");
 const { Webhook, MessageBuilder } = require('discord-webhook-node');
 const { Client, GatewayIntentBits, Partials, EmbedBuilder, Colors, version, MessageAttachment} = require("discord.js");
+const { translate } = require('@vitalets/google-translate-api');
 const client = new Client({
     intents: [
         GatewayIntentBits.DirectMessages,
@@ -38,7 +39,15 @@ hook.setAvatar(ayarlar.image);
 app.get('/endpoint', (req, res)=>{
 res.sendFile(__dirname + "/index.json")
 })
-
+/*                                                                      TRANSLATE                                                                                  */
+app.get('/api/translate',async (req, res)=>{
+	let lang = req.query.lang
+	let txt = req.query.text
+	const { text } = await translate(txt, { to: lang });
+     res.json({
+ "translated": text
+})
+/*                                                                      TRANSLATE                                                                                  */
 /*                                                                        DOVİZ                                                                                    */
 app.get('/api/currency/',async (req, res)=>{
      res.json({"dolar": "/api/currency/dolar","euro": "/api/currency/euro","sterlin": "/api/currency/sterlin", "all": "/api/currency/all", "search": "/api/currency/search?q="})
