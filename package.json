@@ -21,6 +21,7 @@
     "node-fetch": "^3.3.0",
     "nukleon": "^0.0.2",
     "spotify-url-info": "^3.2.3",
+    "@vitalets/google-translate-api": "^9.2.0",
     "tcmb-doviz": "^1.1.2"
   },
   "name": "container",
