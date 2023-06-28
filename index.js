@@ -43,6 +43,8 @@ res.sendFile(__dirname + "/index.json")
 app.get('/api/translate',async (req, res)=>{
 	let lang = req.query.lang
 	let txt = req.query.text
+	if(!lang) = return res.json({"hata": "Dili girmen lazım!});
+	if(!text) = return res.json({"hata": "Yazıyı girmen lazım!});
 	const { text } = await translate(txt, { to: lang });
      res.json({
  "translated": text
