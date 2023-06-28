@@ -36,7 +36,7 @@ hook.setAvatar(ayarlar.image);
 /*                                                                      TANIMLAR                                                                                   */
 /*                                                                     EXPRESS API                                                                                 */
 app.get('/endpoint', (req, res)=>{
-    res.sendFile(__dirname + "/index.json")
+res.sendFile(__dirname + "/index.json")
 })
 
 /*                                                                        DOVİZ                                                                                    */
