@@ -41,7 +41,7 @@ res.sendFile(__dirname + "/index.json")
 
 /*                                                                        DOVİZ                                                                                    */
 app.get('/api/currency/',async (req, res)=>{
-    res.json({"dolar": "/api/currency/dolar","euro": "/api/currency/euro","sterlin": "/api/currency/sterlin", "all": "/api/currency/all", "search": "/api/currency/search?q="})
+     res.json({"dolar": "/api/currency/dolar","euro": "/api/currency/euro","sterlin": "/api/currency/sterlin", "all": "/api/currency/all", "search": "/api/currency/search?q="})
     })
 app.get('/api/currency/all',async (req, res)=>{
     const data = await tcmbdoviz.getData()
