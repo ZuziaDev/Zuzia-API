@@ -36,8 +36,8 @@
 		],
     
 	"animals":[
-		"GET /api/animals"
-		  ],
+        "GET /api/animals?search=[animals]"
+                  ],
     
 	"anime":[
 		"GET /api/anime?search=[anime]",
