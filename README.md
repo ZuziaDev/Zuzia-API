@@ -36,62 +36,65 @@ unplash = [unplash.com](https://unplash.com) sitesinden client idsini yazın <br
 
 ```json
 {
-    "information":{
-         "owner":"Zuziâ RodzeN#9988 | 890626326350946364",
-         "Discord Server":"https://discord.gg/buvJaKXnKT",
-         "Discord Bot":"https://discord.com/api/oauth2/authorize?client_id=1060713660286246912&permissions=8&scope=bot%20applications.commands",
-         "Github":"https://github.com/ZuziaDev"
-                },
+	"information":{
+     	"owner":"Zuziâ RodzeN#9988 | 890626326350946364",
+     	"Discord Server":"https://discord.gg/buvJaKXnKT",
+     	"Discord Bot":"https://discord.com/api/oauth2/authorize?client_id=1060713660286246912&permissions=8&scope=bot%20applications.commands",
+     	"Github":"https://github.com/ZuziaDev"
+ 			   },
     
-    "endpoint":[
+	"endpoint":[
+	"translate":[
+		"GET /api/translate?lang=[lang]&text=[text]"
+	],
+	"currency":[
+		"GET /api/currency/all",
+		"GET /api/currency/dolar",
+		"GET /api/currency/euro",
+		"GET /api/currency/sterlin",
+		"GET /api/currency/search?q=[currency]"
+		   ],
     
-    "currency":[
-        "GET /api/currency/all",
-        "GET /api/currency/dolar",
-        "GET /api/currency/euro",
-        "GET /api/currency/sterlin",
-        "GET /api/currency/search?q=[currency]"
-           ],
+	"fun":[
+		"GET /api/fun/8ball?lang=[tr/en/de/fr/se]",
+		"GET /api/fun/reverse?text=[text]",
+		"GET /api/fun/short-url?url=[url]"
+	  ],
     
-    "fun":[
-        "GET /api/fun/8ball?lang=[tr/en/de/fr/es]",
-        "GET /api/fun/reverse?text=[text]",
-        "GET /api/fun/short-url?url=[url]"
-      ],
+	"earthquake":[
+		"GET /api/earthquake/all",
+		"GET /api/earthquake/page?number=[number]",
+		"GET /api/earthquake/last",
+		"GET /api/earthquake/last?region=[region]"
+			 ],
     
-    "earthquake":[
-        "GET /api/earthquake/all",
-        "GET /api/earthquake/page?number=[number]",
-        "GET /api/earthquake/last",
-        "GET /api/earthquake/last?region=[region]"
-             ],
+	"times":[
+		"GET /api/time"
+		],
     
-    "times":[
-        "GET /api/time"
-        ],
-    
-    "animals":[
+	"animals":[
         "GET /api/animals?search=[animals]"
+                  ],
+    
+	"anime":[
+		"GET /api/anime?search=[anime]",
+		"GET /api/anime/sfw?action=[action]",
+		"GET /api/anime/nsfw?action=[action]",
+        ],
+	"music":[
+		"GET /api/music/lyrics?=song[song]",
+		"GET /api/music/spotify-info?url=[url]"
+        ],
+    
+	"ip_info":[
+		"GET /api/ip-info",
+		"GET /api/ip-info?ip_address=[ip]"
           ],
     
-    "anime":[
-        "GET /api/anime?search=[anime]",
-        "GET /api/anime/sfw?action=[action]",
-        "GET /api/anime/nsfw?action=[action]",
-        ],
-    "music":[
-        "GET /api/music/lyrics?=song[song]",
-        "GET /api/music/spotify-info?url=[url]"
-        ],
-    
-    "ip_info":[
-        "GET /api/ip-info",
-        "GET /api/ip-info?ip_address=[ip]"
-          ],
-    
-    "image":[
-        "GET /api/image/render?hex=[hex]"
+	"image":[
+		"GET /api/image/render?hex=[hex]"
         ]
            ]
 }
+
 ```
