@@ -224,7 +224,13 @@ app.get('/api/time', (req, res) => {
 /*                                                                        TİMES                                                                                    */
 /*                                                                       ANİMALS                                                                                   */
 app.get('/api/animals', async (req, res)=>{
-    res.json({response:"SOON"})
+	const response = await axios.get('https://api.unsplash.com/photos/random', {
+      params: {
+        query: req.query.search,
+        client_id: ayarlar.unplash,
+      }
+    });
+    res.json({response: response.data.urls.regular})
 })
 /*                                                                       ANİMALS                                                                                   */
 /*                                                                        ANİME                                                                                    */
