@@ -16,7 +16,8 @@ API yardımları için [discord](https://discord.gg/buvJaKXnKT) sunucuma gelebil
 "aylinktoken":"aylinkkey",
 "ipinfo":"ipinfokey",
 "webhook":"discord webhook url",
-"image":"webhook avatar"
+"image":"webhook avatar",
+"unplash": "unplash client id" 
 }
 ```
 
@@ -27,6 +28,7 @@ aylinktoken = [tr.link](https://tr.link)'den aldığınız api keyi yazınız.<b
 ipinfo = [abstractapi.com](https://abstractapi.com)'dan aldığınız apideki keyi yazınız.<br>
 webhook = discord webhook urlnizi yazınız.<br>
 image = webhook için resim koyunuz.<br>
+unplash = [unplash.com](https://unplash.com) sitesinden client idsini yazın <br>
 
 <hr>
 
@@ -69,7 +71,7 @@ image = webhook için resim koyunuz.<br>
         ],
     
     "animals":[
-        "GET /api/animals"
+        "GET /api/animals?search=[animals]"
           ],
     
     "anime":[
