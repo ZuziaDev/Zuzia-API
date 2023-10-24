@@ -2,7 +2,7 @@
 
 # # Kullanmadan önce
 
-API yardımları için [discord](https://discord.gg/buvJaKXnKT) sunucuma gelebilirsin.
+API yardımları için [Arkh](https://discord.gg/sBnTXCJCTz) ya da [Rick Code](https://discord.gg/SEzcA5TxTt) sunucularına gelebilirsin.
 
 <hr>
 
@@ -38,7 +38,10 @@ unplash = [unplash.com](https://unplash.com) sitesinden client idsini yazın <br
 {
 	"information":{
      	"owner":"Zuziâ RodzeN#9988 | 890626326350946364",
-     	"Discord Server":"https://discord.gg/buvJaKXnKT",
+     	"Discord Server":{
+"Rick Code": "https://discord.gg/SEzcA5TxTt",
+"Arkh":"https://discord.gg/sBnTXCJCTz"
+},
      	"Discord Bot":"https://discord.com/api/oauth2/authorize?client_id=1060713660286246912&permissions=8&scope=bot%20applications.commands",
      	"Github":"https://github.com/ZuziaDev"
  			   },
