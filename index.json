@@ -1,7 +1,10 @@
 {
 	"information":{
-     	"owner":"Zuziâ RodzeN#9988 | 890626326350946364",
-     	"Discord Server":"https://discord.gg/buvJaKXnKT",
+     	"owner":"zuziarodzen | 890626326350946364",
+     	"Discord Server":{
+"Rick Code": "https://discord.gg/SEzcA5TxTt",
+"Arkh":"https://discord.gg/sBnTXCJCTz"
+}
      	"Discord Bot":"https://discord.com/api/oauth2/authorize?client_id=1060713660286246912&permissions=8&scope=bot%20applications.commands",
      	"Github":"https://github.com/ZuziaDev"
  			   },
